@@ -1,0 +1,88 @@
+<div class="row assign-home-page">
+    <div class="col-md-6">
+        <div class="assign-title-view">
+            <div class="myText">We make it Super</div>
+            <div class="myText myBorderText"><span>Simple</span></div>
+        </div>
+
+        <div class="mt-5">
+            <img src="../../assets/image/home.png" alt="logo image" class="assign-shake-hand-img img-fluid" width="55%">
+        </div>
+        <div class="imageDiv2">
+            <img src="../../assets/image/dots.png" alt="logo image" class="img-fluid" width="75%">
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <div class="card assign-slider-card">
+                    <div class="card-header border-0 assign-slider-header">Eligibilty Calculator</div>
+                    <div class="card-body">
+                        <div class="assign-slider-label">Monthly Income</div>
+                        <div class="assign-slider-value">{{numValue | currency:'INR':'symbol-narrow':'1.0-0'}}</div>
+                        <div class="custom-slider" style="margin-top: -2rem;">
+                            <ngx-slider [(ngModel)]="numValue" [options]="options" (userChange)="onChangeYear($event)"></ngx-slider>
+                        </div>
+                        <div>
+                            <label class="sliderlabel2" style="float: right;">{{fixedValue1| currency:'INR':'symbol-narrow':'1.0-0'}}</label>
+                            <label class="sliderlabel2">{{fixedValue2| currency:'INR':'symbol-narrow':'1.0-0'}}</label>
+                        </div>
+                        <label class="assign-slider-label">Monthly Expense</label>
+                        <div class="custom-slider">
+                            <span class="assign-slider-value">{{numValue2 | currency:'INR':'symbol-narrow':'1.0-0'}}</span>
+                            <ngx-slider style="margin-top: 2rem;" [(ngModel)]="numValue2" [options]="options2"></ngx-slider>
+                        </div>
+                        <div class="mt-3">
+                            <label class="assign-slider-label">Repayment Tenure</label>
+                            <div class="select-div">
+                                <select class="assign-select">
+                                  <option>3 Months</option>
+                                  <option>6 Months</option>
+                                  <option>9 Months</option>
+                                  <option>12 Months</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mt-4 d-flex">
+                            <div class="pt-2"><label class="assign-slider-label">Do You have any Existing loans?</label></div>
+                            <div class="assign-switch"><label class="switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                            </label></div>
+                        </div>
+
+                        <div class="mt-4 d-flex">
+                            <div class="pt-2"><label class="assign-slider-label">EMI of existing loan (optional
+                                )</label></div>
+                        </div>
+                        <input type="text" class="assign-select" />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-4">
+                <div class="card assign-slider-card-2 mt-5">
+                    <div class="card-body mt-5">
+                        <div class="mt-4">
+                            <label class="assign-slider-card-2-label">Loan Amount</label>
+                        </div>
+                        <div class="mt-2">
+                            <label class="assign-slider-card-2-label-2">{{100000 | currency:'INR':'symbol-narrow':'1.0-0'}}</label>
+                        </div>
+                        <div class="mt-4">
+                            <label class="assign-slider-card-2-label">Your EMI will be</label>
+                        </div>
+                        <div class="mt-2">
+                            <label class="assign-slider-card-2-label-2">{{15000 | currency:'INR':'symbol-narrow':'1.0-0'}}</label>
+                        </div>
+                        <div class="mt-4">
+                            <a class="btn getmoneybtn">GET MONEY</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imageDiv2">
+                <img src="../../assets/image/dots.png" alt="logo image" class="assign-img2 img-fluid" width="75%">
+            </div>
+        </div>
+    </div>
+</div>

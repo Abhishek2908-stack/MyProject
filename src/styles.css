@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-image: url('src/assets/image/circle.png'), url('src/assets/image/circle2.png');
+    background-position: top 31% right -8%, top 170% left -10%;
+    background-repeat: no-repeat;
+    padding: 15px;
+    height: 400px;
+    width: 100%;
+    overflow-x: hidden;
+}
