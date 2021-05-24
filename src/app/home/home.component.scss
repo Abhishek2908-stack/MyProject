@@ -60,7 +60,8 @@
 .assign-slider-header {
     font-size: 15px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Open Sans';
 }
 
 .assign-slider-label {
@@ -129,8 +130,8 @@ input:checked+.slider:before {
 }
 
 .imageDiv {
-    margin-top: 8rem;
-    margin-left: 5rem;
+    margin-top: -3rem;
+    margin-left: 15rem;
 }
 
  ::ng-deep {
@@ -150,6 +151,7 @@ input:checked+.slider:before {
         z-index: 3;
         border-radius: 16px;
         box-shadow: 0px 0px 5px #00000026;
+        outline: none;
     }
     .custom-slider .ngx-slider .ngx-slider-bubble.ngx-slider-limit {
         display: none;
@@ -160,16 +162,16 @@ input:checked+.slider:before {
 }
 
 select {
-    font-size: 10px !important;
+    font-size: 15px !important;
     font-weight: 500 !important;
     font-family: 'Montserrat';
     color: #222222;
 }
 
 .assign-select {
-    width: 23rem;
+    width: 100%;
     border: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #cac2c2;
 }
 
 input:focus,
@@ -231,11 +233,11 @@ input:checked+.slider:before {
 }
 
 .assign-switch {
-    margin-left: 1.5rem;
+    margin-left: 8rem;
 }
 
 input[type="text"] {
-    font-size: 10px !important;
+    font-size: 15px !important;
     font-weight: 500 !important;
     font-family: 'Montserrat';
     color: #222222;
@@ -294,8 +296,8 @@ input[type="text"] {
 }
 
 .assign-img2 {
-    margin-top: -3rem;
-    width: 44rem
+    margin-top: -1.5rem;
+    width: 40rem
 }
 
 .assign-shake-hand-img {
